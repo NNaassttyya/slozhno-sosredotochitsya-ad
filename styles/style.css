@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-
-
+/* Основные стили проекта */
 .page {
   margin: 0 auto;
   font-family: var(--font);
@@ -48,7 +45,8 @@
   border: 1px solid rgba(255, 0, 112, 0.40);
   cursor: pointer;
 }
-/*rec*/
+
+/* rec */
 .decorative__element {
   position: absolute;
   right: 0;
@@ -116,7 +114,6 @@
   margin: 0 20px;
 }
 
-
 h3 {
   font-weight: 700;
   background-color: var(--accent-color);
@@ -134,16 +131,17 @@ h4 {
   color: var(--sub-text-color);
   margin-bottom: 10px;
 }
+
 .question__section-two {
-    padding-block-start: 60px;
-    padding-block-end: 80px;
-    margin: 0 20px;
+  padding-block-start: 60px;
+  padding-block-end: 80px;
+  margin: 0 20px;
 }
 
 .question__section-answer-two-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .question__section__fhree {
@@ -161,10 +159,9 @@ h4 {
   display: grid;
 }
 
-.question__section-title{
-    margin-bottom: 20px;
+.question__section-title {
+  margin-bottom: 20px;
 }
-
 
 .question__section-title-image {
   font-weight: 700;
@@ -179,7 +176,6 @@ h4 {
 .question__section__image {
   padding-block-end: 60px;
 }
-
 
 .question__section__image-container {
   display: grid;
@@ -216,7 +212,6 @@ h4 {
   grid-column: 2 / 4;
 }
 
-
 .footer {
   min-block-size: 100vh;
   padding: 20px;
@@ -228,14 +223,14 @@ h4 {
 
 .footer__title {
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
   font-weight: 700;
   line-height: 82.5%;
-
 }
 
-@media (max-width:768px) {
+/* Мобильные устройства (до 767px) */
+@media (width < 768px) {
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
@@ -253,10 +248,6 @@ h4 {
     max-block-size: 117px;
   }
 
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-  }
-
   .question__section__one {
     display: flex;
     flex-direction: column;
@@ -264,81 +255,201 @@ h4 {
     margin: 0 20px;
   }
 
-
   .question__section-title-two {
     max-inline-size: 236px;
   }
 
+  /* Мелкие мобильные (до 559px) */
+  @media (width < 560px) {
+    .header {
+      padding: 10px;
+      margin-left: 0;
+    }
+
+    .header__title {
+      margin-left: 0px;
+      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    }
+
+    .header__text {
+      max-inline-size: 355px;
+      max-block-size: 117px;
+    }
+
+    .question__section__one {
+      margin: 0 10px;
+      padding-block-start: 40px;
+    }
+
+    .question__section-two {
+      margin: 0 10px;
+    }
+
+    .question__section-title-two {
+      min-inline-size: 355px;
+    }
+
+    .question__section__image {
+      padding: 0 0 40px 0;
+    }
+
+    .question__section-title-image {
+      margin: 0 10px 10px 10px;
+    }
+
+    .footer {
+      padding: 10px;
+    }
+
+    .footer__title {
+      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    }
+
+    .decorative__element {
+      margin: 10px;
+    }
+
+    .question__section-answer-two-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .question__section__image-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 10px;
+    }
+
+    .question__section__image-item:first-of-type,
+    .question__section__image-item:nth-of-type(2),
+    .question__section__image-item:nth-of-type(3),
+    .question__section__image-item:nth-of-type(4),
+    .question__section__image-item:last-of-type {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+}
+
+/* Планшеты (768px - 1023px) */
+@media (768px <= width < 1024px) {
+  :root {
+    --section-gap: 60px;
+  }
+
+  .main {
+    margin: 60px 0;
+    padding: 0 20px;
+  }
+
+  .header {
+    padding: 20px 20px 0 20px;
+  }
+
+  .header__title {
+    margin-left: -20px;
+  }
+
+  .header__text {
+    max-inline-size: 364px;
+    max-block-size: 117px;
+  }
+
+  .section__title {
+    max-inline-size: 236px;
+  }
+
+  .section:has(.gallery) {
+    gap: 20px;
+  }
+
+  .section:not(:has(.gallery)) {
+    padding-bottom: 80px;
+  }
+
+  .column-table {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .row-table {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 2;
+  }
+
+  .gallery__item:nth-child(2) {
+    grid-column: 3;
+    grid-row: span 2;
+  }
+
+  .gallery__item:nth-child(3) {
+    grid-row: span 2;
+  }
+
+  .gallery__item:nth-child(5) {
+    grid-column: span 2;
+  }
+
   .footer {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-/*Медиа запрос под 375px*/
-
-@media (max-width:560px) {
- .header {
-  padding: 10px;
-  margin-left: 0;
-}
-
-.header__title {
-  margin-left: 0px;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-}
-
-.header__text {
-  max-inline-size: 355px;
-  max-block-size: 117px;
-}
-
-.question__section__one {
-  margin: 0 10px;
-  padding-block-start: 40px;
-}
-
-.question__section-two {
-  margin: 0 10px;
-}
-
-.question__section-title-two {
-  min-inline-size: 355px;
-}
-
-
-.question__section__image {
-  padding: 0 0 40px 0;
-}
-
-.question__section-title-image {
-  margin: 0 10px 10px 10px;
-}
-
-
-
-.footer {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .decorative__element {
-    margin: 10px;
-  }
-
-  .frame::before {
-    margin: 10px;
-  }
-
-  .frame::after {
-    block-size: 25px;
-    margin: 10px;
+    padding: 0px 20px;
   }
 }
 
+/* Десктоп (1024px и выше) */
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
 
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__text {
+    max-inline-size: 491px;
+    max-block-size: 71px;
+  }
+
+  .section__title {
+    max-inline-size: 315px;
+  }
+
+  .article {
+    gap: 10px;
+  }
+
+  .article-list_type_horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+  }
+
+  .row-table {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .row-table .section__title {
+    grid-column: 1 / -1;
+  }
+
+  .row-table .article-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+    gap: var(--gap);
+  }
+
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
