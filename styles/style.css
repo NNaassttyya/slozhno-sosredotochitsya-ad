@@ -144,7 +144,6 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    padding-block-start: 20px;
 }
 
 .question__section__fhree {
@@ -180,6 +179,7 @@ h4 {
 .question__section__image-container {
   display: grid;
   gap: 20px;
+  margin: 0 20px;
 }
 
 .question__section__image-item {
@@ -259,22 +259,9 @@ h4 {
     margin: 0 20px;
   }
 
-  .question__section-answer-two-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-block-start: 20px;
-  }
 
   .question__section-title-two {
     max-inline-size: 236px;
-  }
-
-  .question__section__fhree {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 20px;
   }
 
   .footer {
@@ -282,7 +269,6 @@ h4 {
     display: flex;
     justify-content: center;
   }
-}
 
 /*Медиа запрос под 375px*/
 
@@ -315,16 +301,6 @@ h4 {
   min-inline-size: 355px;
 }
 
-.question__section-answer-two-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.question__section__fhree {
-  margin: 0 10px;
-}
-
-
 
 .question__section__image {
   padding: 0 0 40px 0;
@@ -334,12 +310,7 @@ h4 {
   margin: 0 10px 10px 10px;
 }
 
-.question__section__image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 0 10px;
-}
+
 
 .footer {
   padding: 10px;
