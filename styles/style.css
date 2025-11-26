@@ -160,12 +160,9 @@ h4 {
 
 .question__section-answer-fhree {
   display: grid;
-  gap: 20px;
 }
 
-.question__section-answer-text-fhree {
-  padding-block-start: 10px;
-}
+
 
 .question__section-title-image {
   font-weight: 700;
@@ -183,7 +180,6 @@ h4 {
 
 
 .question__section__image-container {
-  margin: 0 20px;
   display: grid;
   gap: 20px;
 }
@@ -276,11 +272,7 @@ h4 {
     max-inline-size: 236px;
   }
 
-  .question__section__fhree {
-    display: grid;
-    grid-template-columns: 35% 65%;
-    padding-block-end: 80px;
-  }
+
 
   .footer {
     padding: 20px;
@@ -330,13 +322,7 @@ h4 {
   flex-direction: column;
 }
 
-.question__section__fhree {
-  margin: 0 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-block-end: 50px;
-}
+
 
 .question__section__image {
   padding: 0 0 40px 0;
