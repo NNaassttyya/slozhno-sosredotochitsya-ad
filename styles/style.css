@@ -161,6 +161,11 @@ h4 {
   display: grid;
 }
 
+.question__section-title{
+    margin-bottom: 20px;
+}
+
+
 .question__section-title-image {
   font-weight: 700;
   background-color: var(--accent-color);
