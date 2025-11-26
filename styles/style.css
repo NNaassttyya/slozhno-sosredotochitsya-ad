@@ -18,6 +18,7 @@
 
 .header {
   min-block-size: 100vh;
+  margin-left: -20px;
   display: grid;
   padding: 20px;
   position: relative;
@@ -149,6 +150,26 @@ h4 {
     max-width: 315px;
 }
 
+
+.question__section__fhree {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  padding-block-end: 80px;
+  margin: 0 20px;
+}
+
+.question__section-answer-subtitle {
+  font-weight: 400;
+}
+
+.question__section-answer-fhree {
+  display: grid;
+  gap: 20px;
+}
+
+.question__section-answer-text-fhree {
+  padding-block-start: 10px;
+}
 
 
 
