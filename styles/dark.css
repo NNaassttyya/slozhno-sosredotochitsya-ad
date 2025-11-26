@@ -1,13 +1,3 @@
-:root {
-  --title-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --sub-text-color: #000028;
-  --accent-color: #ff0070;
-  --btn-color:#ff0070;
-  --backgroung-image: url(../images/cover-image-dark.png);
-}
-
-html.theme_dark,
 .page.theme_dark {
   --title-color: #DB00FF;
   --text-color: #F1B2CE;
@@ -17,12 +7,10 @@ html.theme_dark,
   --backgroung-image: url(../images/cover-image-dark.png);
 }
 
-html.theme_dark .decorative__element,
-.theme_dark .decorative__element {
+.theme_dark .rec {
   display: flex;
 }
 
-html.theme_dark .header__theme-menu-button:hover,
 .theme_dark .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.40);
 }
