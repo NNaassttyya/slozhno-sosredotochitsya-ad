@@ -201,10 +201,6 @@
   max-inline-size: 315px;
 }
 
-.title-2 {
-  margin-block-end: 10px;
-}
-
 .card {
   display: flex;
   flex-direction: column;
