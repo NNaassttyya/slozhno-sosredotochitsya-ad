@@ -1,7 +1,7 @@
 .page.theme_light {
   --title-color: #FFC2E6;
   --text-color: #353430;
-  --sub-text-color: #353430;
+  --sub-text: #353430;
   --accent: #ff8dcb;
   --btn-color:#353430;
   --backgroung: url(../images/cover-image-light.png);
@@ -19,7 +19,7 @@
   :root {
     --title-color: #FFC2E6;
     --text-color: #353430;
-    --sub-text-color: #353430;
+    --sub-text: #353430;
     --accent: #ff8dcb;
     --btn-color:#353430;
     --backgroung: url(../images/cover-image-light.png);

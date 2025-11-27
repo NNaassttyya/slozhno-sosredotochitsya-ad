@@ -112,7 +112,7 @@
   background-color: var(--accent);
   font-size: var(--font-size);
   line-height: 23.4px;
-  color: var(--sub-text-color);
+  color: var(--sub-text);
 }
 
 .subtitle {
@@ -170,7 +170,7 @@
   background-color: var(--accent);
   font-size: var(--font-size);
   line-height: 23.4px;
-  color: var(--sub-text-color);
+  color: var(--sub-text);
 }
 
 .section-2 {

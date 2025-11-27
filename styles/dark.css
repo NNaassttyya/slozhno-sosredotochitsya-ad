@@ -1,7 +1,7 @@
 .page.theme_dark {
   --title-color: #DB00FF;
   --text-color: #F1B2CE;
-  --sub-text-color: #000028;
+  --sub-text: #000028;
   --accent: #ff0070;
   --btn-color:#ff0070;
   --backgroung: url(../images/cover-image-dark.png);
