@@ -156,6 +156,10 @@
   gap: 10px;
 }
 
+.content p:first-of-type {
+  padding-block-end: 10px;
+}
+
 .title {
   font-weight: 700;
   background-color: var(--accent);
@@ -165,7 +169,8 @@
 }
 
 .section-2 {
-  padding: 80px 0;
+  padding-block-start: 80px;
+  padding-block-end: 80px;
   margin: 0 20px;
 }
 
